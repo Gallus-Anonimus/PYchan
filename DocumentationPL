@@ -32,7 +32,3 @@ python client.py
 - Wszystkie dane użytkowników i hasła są **szyfrowane za pomocą bcrypt** po stronie serwera.
 - Komunikacja sieciowa odbywa się przez **sockety**, możliwe do rozszerzenia o **SSL/TLS** dla dodatkowego zabezpieczenia.
 - Możliwość implementacji dodatkowych zabezpieczeń, np. autoryzacja dwuskładnikowa.
-
-```bash
-pytest
-```
