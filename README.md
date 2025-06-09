@@ -10,9 +10,9 @@
 
 ## Documentation
 
-[Documentation EN](https://linktodocumentation)
+[Documentation EN](https://github.com/Gallus-Anonimus/PYchan/blob/main/DocumentationEN)
 
-[Documentation PL](https://linktodocumentation)
+[Documentation PL](https://github.com/Gallus-Anonimus/PYchan/blob/main/DocumentationPL)
 
 
 ## Roadmap
