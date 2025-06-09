@@ -1,0 +1,35 @@
+##  Description
+PyChan is a local messaging application written in **Python**, using **Tkinter** for the GUI and **sockets** for Server-Client communication. It enables instant messaging, user management, and chat organization
+
+## 🔧 Instalation
+To start PyChan, you need Python (3.11+) installed along with the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+## 🚀 Start
+
+### Serwer:
+Server is listening on port **12345** 
+
+```bash
+python server.py
+```
+
+### Client:
+To launch the application and connect to the server:
+
+```bash
+python client.py
+```
+
+## 🛠 Architecture
+- **Serwer**: Menages Client conection, authorizes and menagees comunication. All of the user data is **encryped by bcrypt**.
+- **Clinet**: Graphical User Interacer based on **Tkinter**, enables to sent and recive messages.
+
+## ✅ Security
+- All user data and passwords are **encrypted with bcrypt** on the server side.
+- Network communication is via **sockets**, extendable with **SSL/TLS** for additional security.
+- Possibility to implement additional security, e.g. two-factor authentication.
+
