@@ -1,0 +1,21 @@
+FROM python:3.11-slim
+
+# Set working directory
+WORKDIR /app
+
+# Copy code and data
+COPY Code/ ./Code/
+COPY Data/ ./Data/
+COPY requirements.txt
+
+# Set working directory to Code where Server.py is
+WORKDIR /app/Code
+
+pip install -r requirements.txt
+
+
+# Expose the socket port
+EXPOSE 12345
+
+# Run the server
+CMD ["python", "Server.py"]

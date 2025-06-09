@@ -1,0 +1,11 @@
+SCREENSIZE="500x700"
+RESIZEY=False
+RESIZEX=False
+
+
+# Colors
+BG_COLOR = "#1e1e2f"
+FG_COLOR = "#ffffff"
+ACCENT_COLOR = "#8e45f5"
+BUTTON_COLOR = "#2f2f4f"
+ENTRY_BG = "#3c3c5c"
