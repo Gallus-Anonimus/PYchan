@@ -1,0 +1,38 @@
+##  Opis
+PyChan to lokalny komunikator napisany w **Pythonie**, korzystający z **Tkinter** do interfejsu użytkownika oraz **sockets** do komunikacji klient-serwer. Umożliwia wysyłanie wiadomości, zarządzanie kanałami i dostęp do historii czatów.
+
+## 🔧 Instalacja
+Aby uruchomić PyChan, upewnij się, że masz zainstalowanego Pythona (3.11+) i wymagane biblioteki:
+
+```bash
+pip install -r requirements.txt
+```
+
+## 🚀 Uruchamianie
+
+### Serwer:
+Uruchom serwer, który nasłuchuje na porcie **12345** i obsługuje klientów:
+
+```bash
+python server.py
+```
+
+### Klient:
+Uruchom aplikację klienta i podłącz się do serwera:
+
+```bash
+python client.py
+```
+
+## 🛠 Architektura
+- **Serwer**: Obsługuje połączenia klientów, autoryzuje użytkowników i zarządza komunikacją. Wszystkie dane użytkowników są **szyfrowane za pomocą bcrypt**.
+- **Klient**: Graficzny interfejs użytkownika oparty na **Tkinter**, który umożliwia wysyłanie i odbieranie wiadomości.
+
+## ✅ Bezpieczeństwo
+- Wszystkie dane użytkowników i hasła są **szyfrowane za pomocą bcrypt** po stronie serwera.
+- Komunikacja sieciowa odbywa się przez **sockety**, możliwe do rozszerzenia o **SSL/TLS** dla dodatkowego zabezpieczenia.
+- Możliwość implementacji dodatkowych zabezpieczeń, np. autoryzacja dwuskładnikowa.
+
+```bash
+pytest
+```
