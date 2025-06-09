@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import Frame, Label, Button
+from PIL import Image, ImageTk
 
 BG_COLOR = "#1e1e2f"
 FG_COLOR = "#ffffff"
@@ -15,6 +16,16 @@ class AccountPage:
 
         Label(self.page, text="Account Information", bg=BG_COLOR, fg=FG_COLOR, font=("Segoe UI", 16)).pack(pady=15)
 
+        try:
+            img = Image.open("../Client/user.jpg")
+            img = img.resize((100, 100))
+            self.photo = ImageTk.PhotoImage(img)
+            self.photo_label = Label(self.page, image=self.photo, bg=BG_COLOR)
+        except Exception as e:
+            print(f"Error loading image: {e}")
+            self.photo_label = Label(self.page, text="No Photo", bg=BG_COLOR, fg="gray")
+
+        self.photo_label.pack(pady=10)
         self.info_frame = Frame(self.page, bg=BG_COLOR)
         self.info_frame.pack(pady=10, padx=20, fill=tk.X)
 

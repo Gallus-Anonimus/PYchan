@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import Frame, Label, Button, LEFT
-from Code.pages.Admin.Statisctics import StatsAdminPage
+from pages.Admin.Statisctics import StatsAdminPage
 
 
 class AdminPage(Frame):
